@@ -31,7 +31,7 @@ let generateIcon = function (element: any, shape: string) {
 
     if (shape !== element._shape) {
         element._shape = shape;
-        element.innerHTML = SVG_ICON_TEMPLATES[shape] || SVG_ICON_TEMPLATES["warning"];
+        element.innerHTML = SVG_ICON_TEMPLATES[shape] || SVG_ICON_TEMPLATES["error"];
     }
 };
 let setIconSize = function (element: any, size: string) {
